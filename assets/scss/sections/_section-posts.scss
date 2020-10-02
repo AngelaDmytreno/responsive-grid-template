@@ -5,7 +5,7 @@
 
     @include lg-min {
       padding: 0 ($gap*5);
-      padding-top: ($gap*4.5);
+      padding-top: ($gap*3.75);
     }
     @include lg-md {
       padding: 0 $gap;
@@ -18,7 +18,7 @@
     }
   }
 
-  &__container-items {
+  &__block {
     display: grid;
 
     margin-top: ($gap*3);
@@ -42,34 +42,34 @@
       grid-template-columns: 1fr;
     }
   }
-  &__container-items-item:nth-of-type(1) {
+  &__block-item:nth-of-type(1) {
     grid-area: p1;
   }
-  &__container-items-item:nth-of-type(2) {
+  &__block-item:nth-of-type(2) {
     grid-area: p2;
   }
-  &__container-items-item:nth-of-type(3) {
+  &__block-item:nth-of-type(3) {
     grid-area: p3;
   }
-  &__container-items-item:nth-of-type(4) {
+  &__block-item:nth-of-type(4) {
     grid-area: p4;
   }
-  &__container-items-item:nth-of-type(5) {
+  &__block-item:nth-of-type(5) {
     grid-area: p5;
   }
-  &__container-items-item:nth-of-type(6) {
+  &__block-item:nth-of-type(6) {
     grid-area: p6;
   }
-  &__container-items-item {
+  &__block-item {
     background-color: $color-gray-light;
   }
-  &__container-items-item-img {
+  &__block-item-link-img {
     position: relative;
 
     margin: 0 0 $gap 0;
     padding: 0 0 90% 0;
   }
-  &__container-items-item-img img {
+  &__block-item-link-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -80,7 +80,7 @@
     object-fit: cover;
   }
 
-  &__container-items-item-subtitle {
+  &__block-item-link-subtitle {
     margin-top: 38px;
 
     text-align: center;
@@ -104,7 +104,7 @@
     }
   }
 
-  &__container-items-item-text {
+  &__block-item-link-text {
     display: flex;
     overflow: hidden;
 
@@ -127,14 +127,14 @@
     border: 2px solid $color-primary;
     background-color: $color-accent;
   }
-  .link {
+  &__block-item-link {
     display: grid;
 
     height: 100%;
 
     grid-template-rows: 300px 1fr;
   }
-  .link:hover {
+  &__block-item-link:hover {
     transform: scale(1.05);
 
     background-color: darken($color-gray-light, 5%);

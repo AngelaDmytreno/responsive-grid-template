@@ -13,10 +13,10 @@
     }
     @include md-sm {
       padding: 0 $gap;
-      padding-top: ($gap*20.5);
+      padding-top: ($gap*2.5);
     }
     @include sm {
-      padding-top: ($gap*20.5);
+      padding-top: ($gap*2.5);
 
       text-align: center;
     }
@@ -33,11 +33,11 @@
     align-items: flex-start;
 
     @include lg-min {
-      margin-top: ($gap*2.5);
+      
       padding: 0 ($gap*5);
     }
     @include lg {
-      margin-top: ($gap*10.5);
+      margin-top: ($gap*1.5);
       padding: 0 $gap;
     }
     @include sm {

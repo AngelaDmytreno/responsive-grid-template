@@ -477,14 +477,14 @@ template {
 
 html {
   overflow-y: scroll;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.125em;
   color: #637588;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
 h1 {
-  letter-spacing: 0.08em;
+  letter-spacing: 0.085em;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   line-height: 1.2;
@@ -526,9 +526,9 @@ a {
 }
 
 .title {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: .125em;
   color: #2d3651;
 }
 
@@ -1009,46 +1009,46 @@ a {
   margin-bottom: 100px;
 }
 
-.post__container-items {
+.post__block {
   display: grid;
   margin-top: 60px;
 }
 
-.post__container-items-item:nth-of-type(1) {
+.post__block-item:nth-of-type(1) {
   grid-area: p1;
 }
 
-.post__container-items-item:nth-of-type(2) {
+.post__block-item:nth-of-type(2) {
   grid-area: p2;
 }
 
-.post__container-items-item:nth-of-type(3) {
+.post__block-item:nth-of-type(3) {
   grid-area: p3;
 }
 
-.post__container-items-item:nth-of-type(4) {
+.post__block-item:nth-of-type(4) {
   grid-area: p4;
 }
 
-.post__container-items-item:nth-of-type(5) {
+.post__block-item:nth-of-type(5) {
   grid-area: p5;
 }
 
-.post__container-items-item:nth-of-type(6) {
+.post__block-item:nth-of-type(6) {
   grid-area: p6;
 }
 
-.post__container-items-item {
+.post__block-item {
   background-color: #e5e5e5;
 }
 
-.post__container-items-item-img {
+.post__block-item-link-img {
   position: relative;
   margin: 0 0 20px 0;
   padding: 0 0 90% 0;
 }
 
-.post__container-items-item-img img {
+.post__block-item-link-img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1058,7 +1058,7 @@ a {
      object-fit: cover;
 }
 
-.post__container-items-item-subtitle {
+.post__block-item-link-subtitle {
   margin-top: 38px;
   text-align: center;
   color: #2d3651;
@@ -1066,7 +1066,7 @@ a {
   font-weight: bold;
 }
 
-.post__container-items-item-text {
+.post__block-item-link-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,13 +1093,13 @@ a {
   background-color: #d66926;
 }
 
-.post .link {
+.post__block-item-link {
   display: grid;
   height: 100%;
   grid-template-rows: 300px 1fr;
 }
 
-.post .link:hover {
+.post__block-item-link:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
@@ -1213,7 +1213,6 @@ a {
     padding-top: 100px;
   }
   .about__item {
-    margin-top: 50px;
     padding: 0 100px;
   }
   .about__item-text {
@@ -1238,14 +1237,14 @@ a {
   }
   .post__container {
     padding: 0 100px;
-    padding-top: 90px;
+    padding-top: 75px;
   }
-  .post__container-items {
+  .post__block {
     grid-gap: 10px;
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
   }
-  .post__container-items-item-subtitle {
+  .post__block-item-link-subtitle {
     font-size: 1.125rem;
   }
 }
@@ -1255,7 +1254,7 @@ a {
     font-size: 2rem;
   }
   .about__item {
-    margin-top: 210px;
+    margin-top: 30px;
     padding: 0 20px;
   }
   .about__item-text {
@@ -1278,13 +1277,13 @@ a {
     grid-template-columns: 302px 303px 302px;
     grid-template-rows: 60px;
   }
-  .post__container-items-item-subtitle {
+  .post__block-item-link-subtitle {
     font-size: 16px;
   }
 }
 
 @media (max-width: 991.8px) and (min-width: 576px) {
-  .post__container-items {
+  .post__block {
     grid-gap: 10px;
     grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p6 p6";
     grid-template-columns: repeat(3, 1fr);
@@ -1375,7 +1374,7 @@ a {
     grid-template-columns: 352px 352px;
     grid-template-rows: 60px 60px;
   }
-  .post__container-items-item-subtitle {
+  .post__block-item-link-subtitle {
     font-size: 0.875rem;
   }
 }
@@ -1395,7 +1394,7 @@ a {
   }
   .about__title {
     padding: 0 20px;
-    padding-top: 410px;
+    padding-top: 50px;
   }
   .post__container {
     padding: 0 20px;
@@ -1428,7 +1427,7 @@ a {
     grid-template-columns: 1fr;
   }
   .about__title {
-    padding-top: 410px;
+    padding-top: 50px;
     text-align: center;
   }
   .about__item {
@@ -1473,12 +1472,12 @@ a {
   .post__container {
     padding: 20px;
   }
-  .post__container-items {
+  .post__block {
     grid-gap: 10px;
     grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
     grid-template-columns: 1fr;
   }
-  .post__container-items-item-subtitle {
+  .post__block-item-link-subtitle {
     font-size: 0.875rem;
   }
 }
