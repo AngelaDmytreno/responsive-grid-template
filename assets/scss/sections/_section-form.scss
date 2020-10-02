@@ -1,0 +1,114 @@
+.form {
+  background-color: $color-primary;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lg-min {
+      width: 100%;
+      height: 120px;
+    }
+    @include lg {
+      width: 100%;
+      height: 100px;
+    }
+    @include md {
+      width: 100%;
+      height: 182px;
+    }
+    @include sm {
+      max-width: 100%;
+      height: 262px;
+    }
+  }
+  &__container-area {
+    display: grid;
+
+    @include lg-min {
+      grid-gap: $gap;
+      grid-template-areas: "a b c";
+      grid-template-columns: 303.88px 420.5px 420.5px ;
+      grid-template-rows: 60px;
+    }
+    @include lg {
+      grid-gap: 10px;
+      grid-template-areas: "a b c";
+      grid-template-columns: 302px 303px 302px ;
+      grid-template-rows: 60px;
+    }
+    @include md {
+      grid-template-areas: "a a"
+      "b c";
+      grid-template-columns: 352px 352px ;
+      grid-template-rows: 60px 60px;
+    }
+    @include sm {
+      grid-gap: 10px;
+      grid-template-areas: "a"
+      "b"
+      "c";
+      grid-template-columns: 420px;
+      grid-template-rows: 60px 60px 60px;
+    }
+  }
+  &__container-area-name,
+  &__container-area-email,
+  &__container-area-btn {
+    display: block;
+
+    padding: 0 30px;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.8;
+    color: $color-light;
+    border: none;
+    background-color: $color-gray-dark;
+
+    font-size: 1.125rem;
+    font-weight: normal;
+    font-style: $font-main;
+  }
+  &__container-area-name {
+    margin: 0;
+
+    grid-area: a;
+  }
+
+
+
+  &__container-area-email {
+    margin: 0;
+
+    grid-area: b;
+  }
+  &__container-area-btn {
+    margin: 0;
+
+    transition: 1s;
+
+    grid-area: c;
+  }
+  &__container-area-btn:hover {
+    opacity: 1;
+    border: 1px solid $color-light;
+    background-color: $color-accent;
+  }
+  input[name]:hover::placeholder {
+    opacity: 1;
+    color: $color-light;
+  }
+
+  input[name]:hover {
+    border-bottom: 2px solid  $color-light;
+  }
+  input[email]:hover::placeholder {
+    opacity: 1;
+    color: $color-light;
+  }
+
+  input[email]:hover {
+    border-bottom: 2px solid  $color-light;
+  }
+}

@@ -1,0 +1,133 @@
+.about {
+  letter-spacing: 0.055em;
+
+  background-color: $color-gray-light;
+  &__title {
+    @include lg-min {
+      padding: 0 ($gap*5);
+      padding-top: ($gap*5);
+    }
+    @include lg-md {
+      padding: 0 $gap;
+      padding-top: ($gap*4);
+    }
+    @include md-sm {
+      padding: 0 $gap;
+      padding-top: ($gap*20.5);
+    }
+    @include sm {
+      padding-top: ($gap*20.5);
+
+      text-align: center;
+    }
+  }
+  &__container {
+    @include lg;
+  }
+
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    @include lg-min {
+      margin-top: ($gap*20.5);
+      padding: 0 ($gap*5);
+    }
+    @include lg {
+      margin-top: ($gap*10.5);
+      padding: 0 $gap;
+    }
+    @include sm {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      margin-top: ($gap);
+    }
+  }
+
+  &__item-text {
+    overflow: hidden;
+
+    margin: 0 0;
+
+    color: $color-gray;
+
+    font-family: $font-main;
+
+    @include lg-min {
+      max-width: 936px;
+      max-height: 319.23px;
+
+      font-size: 1.125rem;
+    }
+    @include lg {
+      max-width: 630px;
+      max-height: 300px;
+
+      font-size: 1.125rem;
+    }
+    @include md {
+      max-width: 414px;
+      max-height: 270px;
+
+      font-size: $font-size;
+    }
+    @include sm {
+      max-width: 532px;
+      max-height: 323px;
+
+      font-size: $font-size;
+    }
+  }
+  &__item-line {
+    width: 1px;
+    height: 200px;
+    margin: 0 $gap;
+    margin-top: $gap;
+
+    border: 1px solid $color-gray;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__item-img img {
+    margin-bottom: 63px;
+    padding-right: $gap;
+
+    @include lg-min {
+      width: 271px;
+      height: 487px;
+      margin-top: -135px;
+    }
+    @include lg {
+      width: 255px;
+      height: 459px;
+      margin-top: -107px;
+    }
+    @include md {
+      width: 236px;
+      height: 425px;
+      margin-top: -90px;
+    }
+    @include sm {
+      width: 271px;
+      height: 487px;
+      margin-top: ($gap);
+    }
+  }
+}
+
+
+
+
+
+
