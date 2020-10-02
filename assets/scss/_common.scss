@@ -93,3 +93,33 @@ a {
     min-width: auto;;
   }
 }
+.title
+{
+    font-family: $font-header;
+    font-weight: bold;
+
+    letter-spacing: .1em;
+
+    color: $color-primary;
+
+    @include lg-min
+    {
+        font-size: 2.5rem;
+    }
+    @include lg
+    {
+        font-size: 2rem;
+    }
+    @include md
+    {
+        font-size: 1.5rem;
+
+        @include sm
+        {
+            max-width: 532px;
+
+            text-align: center;
+        }
+    }
+}
+

@@ -525,6 +525,13 @@ a {
   font-size: 1.125rem;
 }
 
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #2d3651;
+}
+
 .header {
   position: relative;
   display: grid;
@@ -1190,6 +1197,9 @@ a {
     padding: 18px 20px;
     font-size: 1.125rem;
   }
+  .title {
+    font-size: 2.5rem;
+  }
   .header-content__title {
     margin: 0 0 53px;
   }
@@ -1241,6 +1251,9 @@ a {
 }
 
 @media (max-width: 991.8px) {
+  .title {
+    font-size: 2rem;
+  }
   .about__item {
     margin-top: 210px;
     padding: 0 20px;
@@ -1315,6 +1328,9 @@ a {
     padding: 9px 20px;
     font-size: 1rem;
   }
+  .title {
+    font-size: 1.5rem;
+  }
   .header-menu {
     background-color: rgba(68, 89, 110, 0.25);
   }
@@ -1361,6 +1377,13 @@ a {
   }
   .post__container-items-item-subtitle {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 767.8px) and (max-width: 575.8px) {
+  .title {
+    max-width: 532px;
+    text-align: center;
   }
 }
 
