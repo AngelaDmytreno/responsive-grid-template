@@ -1,11 +1,13 @@
 .about {
   letter-spacing: 0.055em;
 
+
   background-color: $color-gray-light;
   &__title {
     @include lg-min {
       padding: 0 ($gap*5);
       padding-top: ($gap*5);
+      margin-top: 0;
     }
     @include lg-md {
       padding: 0 $gap;
@@ -22,7 +24,7 @@
     }
   }
   &__container {
-    @include lg;
+    
   }
 
 
@@ -33,7 +35,6 @@
     align-items: flex-start;
 
     @include lg-min {
-      
       padding: 0 ($gap*5);
     }
     @include lg {
@@ -125,9 +126,3 @@
     }
   }
 }
-
-
-
-
-
-

@@ -526,10 +526,10 @@ a {
 }
 
 .title {
+  letter-spacing: 0.125em;
+  color: #2d3651;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  letter-spacing: .125em;
-  color: #2d3651;
 }
 
 .header {
@@ -1059,7 +1059,7 @@ a {
 }
 
 .post__block-item-link-subtitle {
-  margin-top: 38px;
+  margin-top: 75px;
   text-align: center;
   color: #2d3651;
   font-family: "Roboto", sans-serif;
@@ -1071,6 +1071,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  letter-spacing: 0;
   padding: 50px 20px;
   text-align: center;
   color: #2d3651;
@@ -1107,7 +1108,7 @@ a {
 }
 
 .footer {
-  padding: 50px 20px 70px;
+  padding: 40px 20px 70px;
   text-align: center;
   background-color: #2d3651;
 }
@@ -1115,10 +1116,10 @@ a {
 .footer__social {
   position: relative;
   display: grid;
-  margin-bottom: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40px;
   grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
@@ -1129,19 +1130,19 @@ a {
   left: calc(50% - 75px / 2);
   width: 75px;
   height: 2px;
-  content: '';
+  content: "";
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer__social-icon {
   display: block;
   padding: 10px;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-  -webkit-transition: color .5s;
-  -o-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .footer__social-icon:hover, .footer__social-icon:focus {
@@ -1155,16 +1156,20 @@ a {
   font-size: 36px;
 }
 
+.footer__copy {
+  padding-top: 10px;
+}
+
 .footer__copy span:nth-of-type(1) {
+  margin-right: -0.5em;
+  letter-spacing: 0.33em;
   font-weight: 100;
-  margin-right: -.5em;
-  letter-spacing: .33em;
 }
 
 .footer__copy span:nth-of-type(2) {
-  font-weight: 700;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #e5e5e5;
+  font-weight: 700;
 }
 
 @media (min-width: 576px) {
@@ -1211,6 +1216,7 @@ a {
   .about__title {
     padding: 0 100px;
     padding-top: 100px;
+    margin-top: 0;
   }
   .about__item {
     padding: 0 100px;

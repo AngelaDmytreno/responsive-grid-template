@@ -93,33 +93,27 @@ a {
     min-width: auto;;
   }
 }
-.title
-{
-    font-family: $font-main;
-    font-weight: bold;
+.title {
+  letter-spacing: 0.125em;
 
-    letter-spacing: .125em;
+  color: $color-primary;
 
-    color: $color-primary;
+  font-family: $font-main;
+  font-weight: bold;
 
-    @include lg-min
-    {
-        font-size: 2.5rem;
+  @include lg-min {
+    font-size: 2.5rem;
+  }
+  @include lg {
+    font-size: 2rem;
+  }
+  @include md {
+    font-size: 1.5rem;
+
+    @include sm {
+      max-width: 532px;
+
+      text-align: center;
     }
-    @include lg
-    {
-        font-size: 2rem;
-    }
-    @include md
-    {
-        font-size: 1.5rem;
-
-        @include sm
-        {
-            max-width: 532px;
-
-            text-align: center;
-        }
-    }
+  }
 }
-

@@ -81,7 +81,7 @@
   }
 
   &__block-item-link-subtitle {
-    margin-top: 38px;
+    margin-top: ($gap*3.75);
 
     text-align: center;
 
@@ -107,6 +107,7 @@
   &__block-item-link-text {
     display: flex;
     overflow: hidden;
+    letter-spacing: 0;
 
     padding: ($gap*2.5) $gap;
 
@@ -140,5 +141,3 @@
     background-color: darken($color-gray-light, 5%);
   }
 }
-
-
