@@ -1,5 +1,9 @@
 .form {
   background-color: $color-primary;
+
+  @include md-sm {
+    margin-top: -45px;
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -9,11 +13,11 @@
       width: 100%;
       height: 120px;
     }
-    @include lg {
+    @include lg-md {
       width: 100%;
       height: 100px;
     }
-    @include md {
+    @include md-sm {
       width: 100%;
       height: 182px;
     }
