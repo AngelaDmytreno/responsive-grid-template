@@ -854,155 +854,6 @@ a {
   grid-area: a9;
 }
 
-/*.about {
-  letter-spacing: 0.055em;
-
-  background-color: $color-gray-light;
-  &__container {
-    width: 100%;
-
-    @include lg-min {
-      margin-bottom: ($gap*5);
-      padding: 0 ($gap*5);
-      padding-top: ($gap*3.75);
-    }
-    @include lg-md {
-      
-      margin-bottom: ($gap*4);
-      padding: 0 $gap;
-    }
-    @include md-sm {
-    
-      padding: 0 $gap;
-      padding-top: $gap;
-    }
-    @include sm {
-      padding: $gap;
-    }
-  }
-  &__title {
-    @include lg-min {
-      margin-top: 0;
-      padding: 0 ($gap*5);
-      padding-top: ($gap*5);
-    }
-    @include lg-md {
-      margin-top: 0;
-      
-      padding-top: ($gap*4);
-    }
-    @include md-sm {
-      
-      padding-top: $gap;
-      
-    }
-    @include sm {
-      padding-top: ($gap*2.5);
-
-      text-align: center;
-    }
-  }
-
-
-
-  &__item {
-    position: relative;
-
-    display: flex;
-    align-items: flex-start;
-
-    @include lg-min {
-      padding: 0 ($gap*5);
-    }
-    @include lg-md {
-      margin-top: ($gap*1);
-     
-    }
-    @include sm {
-      position: relative;
-
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-
-      margin-top: ($gap);
-    }
-  }
-
-  &__item-text {
-    overflow: hidden;
-
-    margin: 0 0;
-
-    color: $color-gray;
-
-    font-family: $font-main;
-
-    @include lg-min {
-      max-width: 936px;
-      max-height: 319.23px;
-
-      font-size: 1.125rem;
-    }
-    @include lg {
-      max-width: 630px;
-      max-height: 300px;
-
-      font-size: 1.125rem;
-    }
-    @include md {
-      max-width: 414px;
-      max-height: 270px;
-
-      font-size: $font-size;
-    }
-    @include sm {
-      max-width: 532px;
-      max-height: 323px;
-
-      font-size: $font-size;
-    }
-  }
-  &__item-line {
-    width: 1px;
-    height: 200px;
-    margin: 0 $gap;
-    margin-top: -10px;
-
-    border: 1px solid $color-gray;
-
-    @include sm {
-      display: none;
-    }
-  }
-
-  &__item-img img {
-    margin-bottom: 63px;
-    padding-right: $gap;
-
-    @include lg-min {
-      width: 271px;
-      height: 487px;
-      margin-top: -135px;
-    }
-    @include lg {
-      width: 255px;
-      height: 459px;
-      margin-top: -107px;
-    }
-    @include md {
-      width: 236px;
-      height: 425px;
-      margin-top: -90px;
-    }
-    @include sm {
-      width: 271px;
-      height: 487px;
-      margin-top: ($gap);
-    }
-  }
-}*/
 .about {
   letter-spacing: 0.055em;
   background-color: #e5e5e5;
@@ -1378,9 +1229,9 @@ a {
     padding-bottom: 100px;
   }
   .about__container {
+    padding: 0 100px;
     grid-gap: 100px;
     grid-template-columns: 1fr 271px;
-    padding: 0 100px;
   }
   .about__content p {
     font-size: 1.125rem;
@@ -1406,7 +1257,7 @@ a {
   .post__block {
     margin-top: 60px;
     grid-gap: 20px;
-    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
   }
   .post__block-item-link-subtitle {
@@ -1439,7 +1290,7 @@ a {
   .post__block {
     margin-top: 40px;
     grid-gap: 20px;
-    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p6 p6";
+    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p6 p6";
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1467,9 +1318,9 @@ a {
     padding-bottom: 80px;
   }
   .about__container {
+    padding: 0 20px;
     grid-gap: 40px;
     grid-template-columns: 1fr 271px;
-    padding: 0 20px;
   }
   .about__content p {
     font-size: 1.125rem;
@@ -1557,9 +1408,9 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
   .about__container {
+    padding: 0 20px;
     grid-gap: 20px;
     grid-template-columns: 1fr 236px;
-    padding: 0 20px;
   }
   .about__content p {
     font-size: 1rem;
@@ -1606,9 +1457,9 @@ a {
     grid-template-columns: 1fr;
   }
   .about__container {
+    text-align: center;
     grid-gap: 20px;
     grid-template-columns: 1fr;
-    text-align: center;
   }
   .about__content p {
     font-size: 1rem;
