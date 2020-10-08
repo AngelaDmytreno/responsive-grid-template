@@ -1,9 +1,8 @@
 .footer {
- 
   padding: ($gap * 2) $gap ($gap * 3.5);
 
   text-align: center;
- 
+
   background-color: $color-primary;
 
 
@@ -14,7 +13,7 @@
     display: grid;
     justify-content: center;
 
-    margin-bottom: $gap * 2;
+    margin-bottom: ($gap * 2.5);
 
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 

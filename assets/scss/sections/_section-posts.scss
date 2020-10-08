@@ -1,22 +1,20 @@
 .post {
   &__container {
     width: 100%;
-   
 
     @include lg-min {
+      margin-bottom: ($gap*5);
       padding: 0 ($gap*5);
       padding-top: ($gap*3.75);
-      margin-bottom: ($gap*5);
-
     }
     @include lg-md {
+      margin-bottom: ($gap*4);
       padding: 0 $gap;
-       padding-top: ($gap*3);
-       margin-bottom: ($gap*4);
+      padding-top: ($gap*3);
     }
     @include md-sm {
-      padding: 0 $gap;
-      margin-bottom: ($gap*4);
+      margin-bottom: ($gap);
+      padding: 40px  $gap;
     }
     @include sm {
       padding: $gap;
@@ -26,21 +24,22 @@
   &__block {
     display: grid;
 
-    margin-top: ($gap*3);
-
     @include lg-min {
+      margin-top: ($gap*3);
+
       grid-gap: $gap;
       grid-template-areas: "p1 p1 p2 p3"
       "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
     }
     @include lg-sm {
+      margin-top: ($gap*2);
+
       grid-gap: $gap;
       grid-template-areas: "p1 p1 p2"
       "p3 p4 p4"
       "p5 p6 p6";
       grid-template-columns: repeat(3, 1fr);
-      margin-top: ($gap*2.5);
     }
     @include sm {
       grid-gap: $gap;
@@ -79,6 +78,7 @@
 
     width: 100%;
     height: 300px;
+
     object-fit: cover;
   }
 
@@ -102,10 +102,10 @@
       font-size: $font-size;
     }
     @include md {
-      font-size: 0.875rem;
+      font-size: $font-size;
     }
     @include sm {
-      font-size: 0.875rem;
+      font-size: $font-size;
     }
   }
 
@@ -131,10 +131,10 @@
       font-size: $font-size;
     }
     @include md {
-      font-size: 0.875rem;
+      font-size: $font-size;
     }
     @include sm {
-      font-size: 0.875rem;
+      font-size: $font-size;
     }
   }
   &__button {
