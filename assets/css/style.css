@@ -1406,7 +1406,7 @@ a {
   .post__block {
     margin-top: 60px;
     grid-gap: 20px;
-    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
   }
   .post__block-item-link-subtitle {
@@ -1439,7 +1439,7 @@ a {
   .post__block {
     margin-top: 40px;
     grid-gap: 20px;
-    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p6 p6";
+    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p6 p6";
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1531,7 +1531,7 @@ a {
     padding-bottom: 60px;
   }
   .form__container-area {
-    grid-template-areas: "a a" "b c";
+    grid-template-areas: "a a" "b c";
     grid-template-columns: 352px 352px;
     grid-template-rows: 60px 60px;
   }
@@ -1622,7 +1622,7 @@ a {
   }
   .form__container-area {
     grid-gap: 10px;
-    grid-template-areas: "a" "b" "c";
+    grid-template-areas: "a" "b" "c";
     grid-template-columns: 420px;
     grid-template-rows: 60px 60px 60px;
   }
