@@ -19,16 +19,16 @@
     max-width: $ul;
     margin: auto;
     @include lg-min {
-      padding-left: 100px;
-      padding-right: 100px;
+      padding-left: ($gap*5);
+      padding-right: ($gap*5);
     }
     @include lg-md {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: $gap;
+      padding-right: $gap;
     }
     @include md {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: $gap;
+      padding-right: $gap;
     }
   }
   &__grid {
@@ -73,6 +73,29 @@
   transition: background-color 0.5s;
 
   background-color: lighten($color-gray-light, 5%);
+  &:nth-of-type(1) {
+    grid-area: p1;
+  }
+
+  &:nth-of-type(2) {
+    grid-area: p2;
+  }
+
+  &:nth-of-type(3) {
+    grid-area: p3;
+  }
+
+  &:nth-of-type(4) {
+    grid-area: p4;
+  }
+
+  &:nth-of-type(5) {
+    grid-area: p5;
+  }
+
+  &:nth-of-type(6) {
+    grid-area: p6;
+  }
 
   &:hover {
     background-color: darken($color-gray-light, 5%);
@@ -81,13 +104,7 @@
       transform: scale(1.1);
     }
 
-    h3 {
-      color: $color-primary;
-    }
-
-    p {
-      color: $color-primary;
-    }
+    
   }
   &__link {
     display: grid;
@@ -120,47 +137,25 @@
     padding: $gap;
 
     h3 {
-      transition: color 0.5s;
       text-align: center;
-      color: $color-primary;
       font-family: $font-header;
       letter-spacing: 0.05em;
-      color: #637588;
+      color: $color-gray;
       font-size: 1.125rem;
+      transition: color 0.5s;
     }
 
     p {
-      transition: color 0.5s;
+      
       text-align: center;
-      color: #637588;
-      font-family: "Roboto", sans-serif;
+      color: $color-gray;
+      font-family: $font-main;
       line-height: 1.15;
-      font-size: 1rem;
-      letter-spacing: 0.05em;
+      font-size: $font-size;
+      letter-spacing: 0.04em;
+      transition: color 0.5s;
     }
   }
 
-  &:nth-of-type(1) {
-    grid-area: p1;
-  }
-
-  &:nth-of-type(2) {
-    grid-area: p2;
-  }
-
-  &:nth-of-type(3) {
-    grid-area: p3;
-  }
-
-  &:nth-of-type(4) {
-    grid-area: p4;
-  }
-
-  &:nth-of-type(5) {
-    grid-area: p5;
-  }
-
-  &:nth-of-type(6) {
-    grid-area: p6;
-  }
+  
 }
