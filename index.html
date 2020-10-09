@@ -175,15 +175,18 @@ SEO                 img-seo.png
     </div>
   </section>
   
-    <section class="form">
-      <div class="form__container">
-        <form class="form__container-area" action="register.php" method="POST">
-          <input class="form__container-area-name" name="name" minlength="3" maxlength="10" placeholder="Your name..." type="text">
-  
-          <input class="form__container-area-email" name="email" type="email" placeholder="Your email..." required>
-          <button class="form__container-area-btn" value="Subscribe" type="button">Subscribe</button>
-        </form>
+  <section class="form">
+    <form class="form__container" action="#">
+      <div class="form-block">
+        <input class="form-block__item" type="text" placeholder="Your name...">
       </div>
+      <div class="form-block">
+        <input class="form-block__item" type="text" placeholder="Your email...">
+      </div>
+      <div class="form-block">
+        <button class="btn-accent" type="submit">Subscribe</button>
+      </div>
+    </form>
   </section>
   
   <section class="posts">
