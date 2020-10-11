@@ -95,14 +95,13 @@ a {
 }
 .title {
   letter-spacing: 0.1em;
-  line-height: 1.2em;
-  font-size: 2.5rem;
-  font-family: $font-header;
 
   color: $color-primary;
 
-  
+  font-family: $font-header;
+  font-size: 2.5rem;
   font-weight: bold;
+  line-height: 1.2em;
 
   @include lg-min {
     font-size: 2.5rem;
