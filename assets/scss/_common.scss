@@ -3,14 +3,10 @@
 }
 
 html {
-  overflow-y: scroll;
-
-  letter-spacing: 0.125em;
-
   color: $color-gray;
 
   font-family: $font-main;
-  font-size: $font-size;
+  font-size: 16px;
 }
 
 h1 {
@@ -18,7 +14,7 @@ h1 {
 
   font-family: $font-header;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2em;
 
   @include lg-min {
     font-size: 3.75rem;
@@ -31,91 +27,70 @@ h1 {
   }
 }
 
+h2 {
+  letter-spacing: 0.1em;
+
+  color: $color-primary;
+
+  font-family: $font-header;
+  line-height: 1.2em;
+
+  @include lg-min {
+    margin-bottom: $gap * 2.8;
+
+    font-size: 2.5rem;
+  }
+  @include lg-md {
+    margin-bottom: $gap * 2.1;
+
+    font-size: 2rem;
+  }
+  @include md-sm {
+    margin-bottom: $gap * 1.8;
+
+    font-size: 1.5rem;
+  }
+  @include sm {
+    margin-bottom: $gap * 1.8;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  letter-spacing: 0.05em;
+
+  color: $color-gray;
+
+  font-size: 1.125rem;
+}
+
 a {
   text-decoration: none;
 
   color: $color-light;
 }
 
-.btn,
-.btn-accent {
-  display: block;
+p {
+  color: $color-gray;
+}
 
-  transition: background-color 0.5s;
-  text-align: center;
-  letter-spacing: 0.1em;
-
-  &:hover,
-  &:focus {
-    background-color: $color-accent;
-  }
+input:focus {
+  outline: none;
 }
 
 .btn {
-  border: 2px solid $color-light;
+  border-color: $color-light;
   background-color: rgba($color-light, 0.1);
 
-  @include lg-min {
-    min-width: 250px;
-    height: 60px;
-    padding: 18px $gap;
-
-    font-size: 1.125rem;
-  }
-  @include lg-md {
-    min-width: 200px;
-    height: 50px;
-    padding: 14px $gap;
-
-    font-size: 1rem;
-  }
-  @include md {
-    min-width: 170px;
-    height: 40px;
-    padding: 9px $gap;
-
-    font-size: 1rem;
-  }
+  @extend %btn-common;
 }
 
 .btn-accent {
-  min-width: 350px;
-  height: 60px;
-  padding: 18px $gap;
-
-  border: 2px solid $color-primary;
+  border-color: $color-primary;
   background-color: rgba($color-primary, 0.8);
 
-  font-size: 1.125rem;
-
-  @include sm {
-    width: 100%;
-    min-width: auto;;
-  }
-}
-.title {
-  letter-spacing: 0.1em;
-
-  color: $color-primary;
-
-  font-family: $font-header;
-  font-weight: bold;
-  line-height: 1.2em;
-
-  @include lg-min {
-    font-size: 2.5rem;
-  }
-  @include lg-md {
-    font-size: 2rem;
-  }
-  @include md-sm {
-    font-size: 1.5rem;
-  }
-  @include sm {
-    max-width: 532px;
-
-    text-align: center;
-
-    font-size: 1.5rem;
-  }
+  @extend %btn-common;
 }

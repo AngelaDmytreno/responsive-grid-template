@@ -1,38 +1,10 @@
 .posts {
-  @include lg-min {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  @include lg-md {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  @include md {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  @extend %section;
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: 56px;
-  }
   &__container {
-    max-width: $ul;
-    margin: auto;
-
-    @include lg-min {
-      padding-right: ($gap);
-      padding-left: ($gap);
-    }
-    @include lg-md {
-      padding-right: $gap;
-      padding-left: $gap;
-    }
-    @include md {
-      padding-right: $gap;
-      padding-left: $gap;
-    }
+    @extend %container;
   }
+
   &__grid {
     display: grid;
 
@@ -56,21 +28,12 @@
       grid-template-columns: 1fr;
     }
   }
+
   &__button {
-    @include sm-min {
-      display: flex;
-      justify-content: center;
-    }
-    .btn-accent {
-      @include sm-min {
-        min-width: 350px;
-      }
-      @include sm {
-        width: 100%;
-      }
-    }
+    @extend %btn-wrapper;
   }
 }
+
 .post-item {
   transition: background-color 0.5s;
 
@@ -98,14 +61,22 @@
   &:nth-of-type(6) {
     grid-area: p6;
   }
-
   &:hover {
     background-color: darken($color-gray-light, 5%);
 
     .post-item__image img {
       transform: scale(1.1);
     }
+
+    h3 {
+      color: $color-primary;
+    }
+
+    p {
+      color: $color-primary;
+    }
   }
+
   &__link {
     display: grid;
     overflow: hidden;
@@ -114,6 +85,7 @@
 
     grid-template-rows: 300px 1fr;
   }
+
   &__image {
     display: flex;
     overflow: hidden;
@@ -130,6 +102,7 @@
       object-fit: cover;
     }
   }
+
   &__caption {
     display: grid;
     align-content: center;
@@ -139,25 +112,15 @@
     h3 {
       transition: color 0.5s;
       text-align: center;
-      letter-spacing: 0.05em;
-
-      color: $color-gray;
 
       font-family: $font-header;
-      font-size: 1.125rem;
-      line-height: 1.15;
     }
 
     p {
       transition: color 0.5s;
       text-align: center;
-      letter-spacing: 0.04em;
-
-      color: $color-gray;
-
-      font-family: $font-main;
-      font-size: $font-size;
-      line-height: 1.15;
     }
   }
+
+  
 }
