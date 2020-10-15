@@ -844,8 +844,8 @@ input:focus {
 }
 
 .about {
-  background-color: #e5e5e5;
   letter-spacing: 0.055em;
+  background-color: #e5e5e5;
 }
 
 .about__container {
@@ -872,9 +872,9 @@ input:focus {
 
 .about__image {
   display: grid;
-  justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  justify-items: center;
 }
 
 .about__image img {
@@ -912,10 +912,10 @@ input:focus {
   height: 60px;
   padding-right: 30px;
   padding-left: 30px;
-  letter-spacing: 0.15em;
   -webkit-transition: background-color 0.5s, border-color 0.5s;
   -o-transition: background-color 0.5s, border-color 0.5s;
   transition: background-color 0.5s, border-color 0.5s;
+  letter-spacing: 0.15em;
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
@@ -950,28 +950,23 @@ input:focus {
 }
 
 .form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
-  color: #ffffff;
-  opacity: 1;
+  color: #8c9bab;
 }
 
 .form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
-  color: #ffffff;
-  opacity: 1;
+  color: #8c9bab;
 }
 
 .form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
-  color: #ffffff;
-  opacity: 1;
+  color: #8c9bab;
 }
 
 .form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
-  color: #ffffff;
-  opacity: 1;
+  color: #8c9bab;
 }
 
 .form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
-  color: #ffffff;
-  opacity: 1;
+  color: #8c9bab;
 }
 
 .posts__grid {
@@ -1094,7 +1089,7 @@ input:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
@@ -1259,7 +1254,7 @@ input:focus {
     grid-template-columns: 1fr 271px;
   }
   .about__content p:first-of-type::after {
-    right: -10;
+    right: -20px;
   }
   .form__container {
     grid-template-columns: repeat(3, 1fr);
@@ -1267,9 +1262,6 @@ input:focus {
   .posts__grid {
     grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
     grid-template-columns: repeat(3, 1fr);
-  }
-  .footer {
-    padding: 40px 20px 70px;
   }
 }
 
